@@ -1,0 +1,117 @@
+.btn{
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 3px;
+  background: @orange;
+  padding: 11px 20px 9px;
+  line-height: 1.2em;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  &:hover,
+  &--hover{
+    background: #ffa843;
+  }
+
+  &:active,
+  &--active{
+
+  }
+
+  &--modify{
+
+    &:hover,
+    &--hover{
+
+    }
+
+    &:active,
+    &--active{
+
+    }
+  }
+}
+.btn--black{
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 105px;
+  border: 2px solid black;
+  background: black;
+  padding: 11px 20px 10px;
+  line-height: 1.2em;
+  vertical-align: middle;
+  color: white;
+  cursor: pointer;
+  &:hover,
+  &--hover{
+    background: white;
+    color: black;
+  }
+}
+
+.btn--small{
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 105px;
+  background: black;
+  padding: 8px 14px;
+  line-height: 1.2em;
+  vertical-align: middle;
+  color: white;
+  cursor: pointer;
+  &:hover,
+  &--hover{
+    opacity: 0.85;
+  }
+}
+
+.slick-dots{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 0;
+  margin-bottom: 30px;
+  & li{
+    list-style: none;
+    float: left;
+    margin: 0 5px;
+    & button{
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      vertical-align: middle;
+      background: transparent;
+      border: 2px solid white;
+      box-sizing: border-box;
+      padding: 0;
+      font-size: 0;
+      border-radius: 20px;
+    }
+    &.slick-active{
+      & button{
+        background: @orange;
+        border-color: @orange;
+      }
+    }
+  }
+}
